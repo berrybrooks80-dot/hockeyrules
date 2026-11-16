@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HockeyRules — ICEHOCKEY RULES | NHL vs IIHF</title>
+<meta name="description" content="A side-by-side guide to NHL and IIHF ice hockey rules: rink dimensions, icing, offside, penalties, overtime and shootouts, 2026-27 changes, 23 referee signals and sourced video explainers.">
+<meta name="theme-color" content="#0A1628">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#home">Skip to content</a>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="brand" href="#home" aria-label="HockeyRules home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" role="img" aria-label="">
+          <path d="M4 22 L20 6 L28 6 L12 22 Z" class="bm-stick"/>
+          <circle cx="24" cy="24" r="4" class="bm-puck"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <strong>HOCKEY<span>RULES</span></strong>
+        <em>NHL vs IIHF</em>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
+      <span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="nav-toggle-label">Menu</span>
+    </button>
+
+    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="#home" class="is-active">Home</a></li>
+        <li><a href="#rink">Rink</a></li>
+        <li><a href="#icing">Icing</a></li>
+        <li><a href="#offside">Offside</a></li>
+        <li><a href="#penalties">Penalties</a></li>
+        <li><a href="#overtime">Overtime &amp; Shootout</a></li>
+        <li><a href="#changes">2026-27 Changes</a></li>
+        <li><a href="#signals">Referee Signals</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#sources">Sources</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="hero-glow hero-glow--a"></span>
+      <span class="hero-glow hero-glow--b"></span>
+      <span class="hero-lines"></span>
+    </div>
+
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="hero-kicker"><span class="dot" aria-hidden="true"></span>2026-27 Season Edition</p>
+
+        <h1 class="hero-title" id="heroTitle">
+          <span class="ht-line ht-line--1" data-reveal>ICEHOCKEY RULES</span>
+          <span class="ht-line ht-line--2" data-reveal>NHL <em>vs</em> IIHF</span>
+        </h1>
+
+        <p class="hero-sub" data-reveal>
+          The same sport, two rulebooks. Rink dimensions, icing, offside, penalties,
+          overtime and the 2026-27 changes — set side by side, with sourced video
+          and an illustrated referee-signal deck.
+        </p>
+
+        <div class="hero-actions" data-reveal>
+          <a class="btn btn--primary" href="#rink">Compare Rules</a>
+          <a class="btn btn--ghost" href="#changes">2026-27 Changes</a>
+          <a class="btn btn--ghost" href="#signals">Referee Signals</a>
+        </div>
+
+        <ul class="hero-meta" data-reveal>
+          <li><b>10</b><span>Sections</span></li>
+          <li><b>23</b><span>Signals</span></li>
+          <li><b>2026-27</b><span>Rulebooks</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-figure" data-reveal>
+        <svg class="rink-figure" viewBox="0 0 520 280" role="img" aria-label="Diagram of an ice hockey rink with centre red line, two blue lines, face-off circles and goal creases">
+          <defs>
+            <linearGradient id="iceGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#0f2a45"/>
+              <stop offset="1" stop-color="#08111f"/>
+            </linearGradient>
+            <linearGradient id="boardGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#A5F2F3" stop-opacity=".85"/>
+              <stop offset=".5" stop-color="#A5F2F3" stop-opacity=".25"/>
+              <stop offset="1" stop-color="#A5F2F3" stop-opacity=".85"/>
+            </linearGradient>
+          </defs>
+
+          <rect class="rf-board" x="8" y="14" width="504" height="252" rx="52"/>
+          <rect class="rf-ice" x="24" y="30" width="472" height="220" rx="42" fill="url(#iceGrad)"/>
+          <rect class="rf-boardstroke" x="24" y="30" width="472" height="220" rx="42"/>
+
+          <line class="rf-line rf-line--red" x1="260" y1="30" x2="260" y2="250"/>
+          <line class="rf-line rf-line--blue" x1="172" y1="30" x2="172" y2="250"/>
+          <line class="rf-line rf-line--blue" x1="348" y1="30" x2="348" y2="250"/>
+
+          <circle class="rf-circle" cx="260" cy="140" r="34"/>
+          <circle class="rf-dot" cx="260" cy="140" r="4"/>
+
+          <circle class="rf-circle" cx="110" cy="82" r="26"/>
+          <circle class="rf-circle" cx="110" cy="198" r="26"/>
+          <circle class="rf-dot" cx="110" cy="82" r="3.5"/>
+          <circle class="rf-dot" cx="110" cy="198" r="3.5"/>
+
+          <circle class="rf-circle" cx="410" cy="82" r="26"/>
+          <circle class="rf-circle" cx="410" cy="198" r="26"/>
+          <circle class="rf-dot" cx="410" cy="82" r="3.5"/>
+          <circle class="rf-dot" cx="410" cy="198" r="3.5"/>
+
+          <path class="rf-crease" d="M424 108 h34 a34 34 0 0 1 0 64 h-34 z"/>
+          <path class="rf-crease" d="M96 108 h-34 a34 34 0 0 0 0 64 h34 z"/>
+          <line class="rf-goal" x1="452" y1="122" x2="452" y2="158"/>
+          <line class="rf-goal" x1="68" y1="122" x2="68" y2="158"/>
+
+          <path class="rf-trail" d="M120 210 C 190 150, 240 190, 300 120 S 400 70, 430 118"/>
+          <circle class="rf-puck" cx="430" cy="118" r="6"/>
+        </svg>
+        <p class="figure-caption">Regulation rink markings — red centre line, blue lines, face-off circles, goal creases.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AT A GLANCE ============ -->
+  <section class="section section--glance" aria-labelledby="glanceTitle">
+    <div class="wrap">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">Quick read</p>
+        <h2 id="glanceTitle">Six differences that change the game</h2>
+        <p class="section-lede">Every line below is expanded in its own section further down, with the exact figures and the source they came from.</p>
+      </header>
+
+      <div class="glance-grid">
+        <article class="glance-card" data-reveal>
+          <p class="glance-tag">Rink</p>
+          <h3>200 × 85 ft vs 60 × 26–30 m</h3>
+          <p class="glance-row"><span class="pill pill--nhl">NHL</span> Narrower sheet, more contact.</p>
+          <p class="glance-row"><span class="pill pill--iihf">IIHF</span> Wider sheet, more open ice.</p>
+          <a class="glance-link" href="#rink">Open Rink <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="glance-card" data-reveal>
+          <p class="glance-tag">Icing</p>
+          <h3>Hybrid vs Automatic</h3>
+          <p class="glance-row"><span class="pill pill--nhl">NHL</span> Hybrid icing — race to the face-off dots.</p>
+          <p class="glance-row"><span class="pill pill--iihf">IIHF</span> Automatic icing — whistle on the goal line.</p>
+          <a class="glance-link" href="#icing">Open Icing <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="glance-card" data-reveal>
+          <p class="glance-tag">Fighting</p>
+          <h3>5 minutes vs ejection</h3>
+          <p class="glance-row"><span class="pill pill--nhl">NHL</span> 5-minute major; equal majors cancel.</p>
+          <p class="glance-row"><span class="pill pill--iihf">IIHF</span> Major plus game misconduct or match penalty.</p>
+          <a class="glance-link" href="#penalties">Open Penalties <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="glance-card" data-reveal>
+          <p class="glance-tag">Goaltender</p>
+          <h3>Trapezoid vs open ice</h3>
+          <p class="glance-row"><span class="pill pill--nhl">NHL</span> Puck handling restricted behind the net.</p>
+          <p class="glance-row"><span class="pill pill--iihf">IIHF</span> No trapezoid restriction.</p>
+          <a class="glance-link" href="#penalties">Open Penalties <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="glance-card" data-reveal>
+          <p class="glance-tag">Overtime</p>
+          <h3>5 min vs 5 / 10 / 20 min</h3>
+          <p class="glance-row"><span class="pill pill--nhl">NHL</span> 5-minute 3-on-3 in the regular season.</p>
+          <p class="glance-row"><span class="pill pill--iihf">IIHF</span> Round-dependent: 5, 10 or 20 minutes.</p>
+          <a class="glance-link" href="#overtime">Open Overtime <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="glance-card" data-reveal>
+          <p class="glance-tag">Shootout</p>
+          <h3>3 shooters vs 5 shooters</h3>
+          <p class="glance-row"><span class="pill pill--nhl">NHL</span> Three shooters, then sudden death.</p>
+          <p class="glance-row"><span class="pill pill--iihf">IIHF</span> Five shooters; no shootout in medal games.</p>
+          <a class="glance-link" href="#overtime">Open Overtime <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RINK ============ -->
+  <section class="section" id="rink" aria-labelledby="rinkTitle">
+    <div class="wrap">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">01 — Rink</p>
+        <h2 id="rinkTitle">The sheet decides the style of play</h2>
+        <p class="section-lede">Officially the NHL plays on 200 × 85 feet; the IIHF rulebook allows a sheet 60 m long and 26 to 30 m wide. A narrower rink means less time and less space — more contact, faster transitions.</p>
+      </header>
+
+      <div class="rink-compare">
+        <figure class="rink-panel" data-reveal>
+          <figcaption class="rink-panel-head">
+            <span class="pill pill--nhl">NHL</span>
+            <strong>200 ft × 85 ft</strong>
+            <em>60.96 m × 25.9 m</em>
+          </figcaption>
+          <svg class="rink-scale rink-scale--nhl" viewBox="0 0 300 140" role="img" aria-label="NHL rink proportions: 200 feet by 85 feet, ratio 2.35 to 1">
+            <rect x="6" y="6" width="288" height="128" rx="26" class="rs-board"/>
+            <rect x="16" y="16" width="268" height="108" rx="20" class="rs-ice"/>
+            <line x1="150" y1="16" x2="150" y2="124" class="rs-red"/>
+            <line x1="104" y1="16" x2="104" y2="124" class="rs-blue"/>
+            <line x1="196" y1="16" x2="196" y2="124" class="rs-blue"/>
+            <circle cx="150" cy="70" r="17" class="rs-circle"/>
+            <circle cx="150" cy="70" r="2.5" class="rs-dot"/>
+            <circle cx="64" cy="42" r="12" class="rs-circle"/>
+            <circle cx="64" cy="98" r="12" class="rs-circle"/>
+            <circle cx="236" cy="42" r="12" class="rs-circle"/>
+            <circle cx="236" cy="98" r="12" class="rs-circle"/>
+          </svg>
+          <p class="rink-note">Corner radius 28 ft (8.5 m). Trapezoid behind the net.</p>
+        </figure>
+
+        <figure class="rink-panel" data-reveal>
+          <figcaption class="rink-panel-head">
+            <span class="pill pill--iihf">IIHF</span>
+            <strong>60 m × 26–30 m</strong>
+            <em>196.9 ft × 85.3–98.4 ft</em>
+          </figcaption>
+          <svg class="rink-scale rink-scale--iihf" viewBox="0 0 300 140" role="img" aria-label="IIHF rink proportions: 60 metres by 30 metres, a wider sheet than the NHL">
+            <rect x="6" y="6" width="288" height="128" rx="26" class="rs-board"/>
+            <rect x="16" y="16" width="268" height="108" rx="20" class="rs-ice"/>
+            <line x1="150" y1="16" x2="150" y2="124" class="rs-red"/>
+            <line x1="104" y1="16" x2="104" y2="124" class="rs-blue"/>
+            <line x1="196" y1="16" x2="196" y2="124" class="rs-blue"/>
+            <circle cx="150" cy="70" r="19" class="rs-circle"/>
+            <circle cx="150" cy="70" r="2.5" class="rs-dot"/>
+            <circle cx="64" cy="42" r="13" class="rs-circle"/>
+            <circle cx="64" cy="98" r="13" class="rs-circle"/>
+            <circle cx="236" cy="42" r="13" class="rs-circle"/>
+            <circle cx="236" cy="98" r="13" class="rs-circle"/>
+            <path class="rs-trap-ghost" d="M236 16 L206 40 M236 124 L206 100"/>
+          </svg>
+          <p class="rink-note">Corner radius 7.0–8.5 m (23.0–27.9 ft). No trapezoid.</p>
+        </figure>
+      </div>
+
+      <div class="table-scroll" data-reveal>
+        <table class="data-table">
+          <caption class="sr-only">NHL and IIHF rink measurement comparison</caption>
+          <thead>
+            <tr>
+              <th scope="col">Measurement</th>
+              <th scope="col" class="col-nhl">NHL</th>
+              <th scope="col" class="col-iihf">IIHF</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Overall size</th>
+              <td>200 ft × 85 ft<span class="cell-sub">60.96 m × 25.9 m</span></td>
+              <td>60 m × 26–30 m<span class="cell-sub">196.9 ft × 85.3–98.4 ft</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Corner radius</th>
+              <td>28 ft<span class="cell-sub">8.5 m</span></td>
+              <td>7.0–8.5 m<span class="cell-sub">23.0–27.9 ft</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Goal line to end boards</th>
+              <td>11 ft<span class="cell-sub">3.4 m</span></td>
+              <td>4 m<span class="cell-sub">13 ft</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Blue line to end boards</th>
+              <td>75 ft<span class="cell-sub">23 m</span></td>
+              <td>22.5 m<span class="cell-sub">73.8 ft</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Trapezoid behind the net</th>
+              <td><span class="mark mark--yes">Yes</span> goaltender handling restricted</td>
+              <td><span class="mark mark--no">No</span> goaltender may play the puck anywhere behind the goal line</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <aside class="callout" data-reveal>
+        <p class="callout-title">2026 Milan Cortina note</p>
+        <p>The Olympic sheet has traditionally been reported at 197 × 98.5 ft. Milan Cortina will be the third Olympics played on NHL-sized ice, after Vancouver 2010 and Beijing 2022 — outlets have described that sheet as 60 m × 26 m (196.85 × 85.3 ft), on the narrow end of the IIHF range. The IIHF rulebook permits 26–30 m, so venue-level figures can differ.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ ICING ============ -->
+  <section class="section section--alt" id="icing" aria-labelledby="icingTitle">
+    <div class="wrap">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">02 — Icing</p>
+        <h2 id="icingTitle">Two ways to kill a long dump-in</h2>
+        <p class="section-lede">A team ices the puck when it shoots, bats or deflects it from its own half across the opponent's goal line and nobody touches it first. What happens next is where the rulebooks split.</p>
+      </header>
+
+      <div class="split">
+        <article class="rule-card rule-card--nhl" data-reveal>
+          <header>
+            <span class="pill pill--nhl">NHL</span>
+            <h3>Hybrid icing</h3>
+          </header>
+          <p>The linesperson judges a race to the face-off dots — not a race to the boards. If the attacking player would reach the imaginary line through the dots first, the icing is waved off and play continues. If the defending player gets there first, icing is called.</p>
+          <ul class="rule-list">
+            <li>The whistle does not wait for the puck to be touched.</li>
+            <li>Designed to remove the high-speed collision at the end boards.</li>
+            <li>Still waved off if the goaltender plays the puck or the puck enters the net.</li>
+          </ul>
+        </article>
+
+        <article class="rule-card rule-card--iihf" data-reveal>
+          <header>
+            <span class="pill pill--iihf">IIHF</span>
+            <h3>Automatic (no-touch) icing</h3>
+          </header>
+          <p>Play is stopped the moment the puck completely crosses the goal line; nobody has to win a race to the puck. The back official signals a possible icing with a fully extended free arm, and the front official confirms it.</p>
+          <ul class="rule-list">
+            <li>No contact at the end boards is required.</li>
+            <li>Waved off when the goaltender leaves the crease and moves toward the puck.</li>
+            <li>Icing is not called while a team is shorthanded.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="flow" data-reveal>
+        <p class="flow-title">How the call is made</p>
+        <ol class="flow-steps">
+          <li><span class="flow-num">1</span><div><h4>Release from own half</h4><p>Puck is shot or deflected from behind the centre red line.</p></div></li>
+          <li><span class="flow-num">2</span><div><h4>Crosses the goal line</h4><p>The puck travels the full length of the ice without being touched.</p></div></li>
+          <li><span class="flow-num">3</span><div><h4>Exemption check</h4><p>Shorthanded team? Goaltender played it? Puck going in? Any yes waves it off.</p></div></li>
+          <li><span class="flow-num">4</span><div><h4>Race or whistle</h4><p>NHL: hybrid judgement at the dots. IIHF: automatic whistle.</p></div></li>
+          <li><span class="flow-num">5</span><div><h4>Consequence</h4><p>Face-off back in the offending team's defensive zone, and no line change.</p></div></li>
+        </ol>
+      </div>
+
+      <div class="table-scroll" data-reveal>
+        <table class="data-table">
+          <caption class="sr-only">Icing comparison</caption>
+          <thead>
+            <tr><th scope="col">Aspect</th><th scope="col" class="col-nhl">NHL</th><th scope="col" class="col-iihf">IIHF</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">System</th><td>Hybrid icing</td><td>Automatic / no-touch icing</td></tr>
+            <tr><th scope="row">Decision point</th><td>Race to the face-off dots, judged by the linesperson</td><td>Puck completely crosses the goal line</td></tr>
+            <tr><th scope="row">Common exemptions</th><td>Goaltender plays the puck or leaves the crease; puck enters the net; shorthanded team</td><td>Goaltender leaves the crease and moves toward the puck; puck enters the net; shorthanded team</td></tr>
+            <tr><th scope="row">After the call</th><td>Defensive-zone face-off, no line change</td><td>Defensive-zone face-off, no line change</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OFFSIDE ============ -->
+  <section class="section" id="offside" aria-labelledby="offsideTitle">
+    <div class="wrap">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">03 — Offside</p>
+        <h2 id="offsideTitle">Shared principle, tightening wording</h2>
+        <p class="section-lede">Both rulebooks judge offside on skate position, not the stick. An attacker is offside when both skates have fully crossed the blue line into the attacking zone before the puck does.</p>
+      </header>
+
+      <div class="offside-grid">
+        <article class="mini-card" data-reveal>
+          <h3>Delayed offside</h3>
+          <p>The linesperson raises the arm but does not whistle. Play stops only if an attacking player touches the puck or checks an opponent. If every attacker clears the zone — a tag-up — the offside is wiped out and play continues.</p>
+        </article>
+        <article class="mini-card" data-reveal>
+          <h3>Intentional offside</h3>
+          <p>When the linesperson judges the entry was deliberate rather than a line-contested entry, the face-off moves back to the offending team's defensive zone instead of the neutral zone.</p>
+        </article>
+        <article class="mini-card" data-reveal>
+          <h3>Goal after an offside</h3>
+          <p>A goal scored on a play that was offside cannot stand. This is one of the situations a coach can ask the officials to review, and the deciding standard is conclusive evidence.</p>
+        </article>
+      </div>
+
+      <ol class="timeline" data-reveal>
+        <li class="timeline-item">
+          <p class="timeline-year">2025-26</p>
+          <h3>NHL wording clarified</h3>
+          <p>The definition of a skate is tied to the skate blade, and the requirement to control the puck with the stick at the blue line was made explicit.</p>
+        </li>
+        <li class="timeline-item">
+          <p class="timeline-year">2026-27</p>
+          <h3>IIHF: possession and control</h3>
+          <p>An attacking player entering the zone before the puck must have possession and control of the puck with the stick to avoid being ruled offside.</p>
+        </li>
+        <li class="timeline-item">
+          <p class="timeline-year">2026-27</p>
+          <h3>IIHF: high-sticking tied to shoulder height</h3>
+          <p>For contact to count as high-sticking, the opponent's shoulders must be at waist level or higher — a clarification aimed at players bent low when a stick rides above the shoulders.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PENALTIES ============ -->
+  <section class="section section--alt" id="penalties" aria-labelledby="penTitle">
+    <div class="wrap">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">04 — Penalties</p>
+        <h2 id="penTitle">Where the two books diverge most</h2>
+        <p class="section-lede">Fighting, checks to the head, goaltender interference and goaltender puck handling are the classic fault lines between the NHL and international hockey.</p>
+      </header>
+
+      <div class="penalty-grid">
+        <article class="penalty-card" data-reveal>
+          <h3>Fighting</h3>
+          <div class="penalty-side penalty-side--nhl">
+            <span class="pill pill--nhl">NHL</span>
+            <p>A five-minute major. Matching majors cancel out and teams stay at even strength. The instigator takes an additional two minutes.</p>
+          </div>
+          <div class="penalty-side penalty-side--iihf">
+            <span class="pill pill--iihf">IIHF</span>
+            <p>A major plus a game misconduct or a match penalty. Removing a jersey or helmet to fight carries an additional penalty. In practice fighting is not tolerated.</p>
+          </div>
+        </article>
+
+        <article class="penalty-card" data-reveal>
+          <h3>Checks to the head</h3>
+          <div class="penalty-side penalty-side--nhl">
+            <span class="pill pill--nhl">NHL</span>
+            <p>Discretionary: a minor, major, game misconduct or match penalty depending on severity and circumstances.</p>
+          </div>
+          <div class="penalty-side penalty-side--iihf">
+            <span class="pill pill--iihf">IIHF</span>
+            <p>A minor or major must be accompanied by a misconduct (10 minutes) or a game misconduct.</p>
+          </div>
+        </article>
+
+        <article class="penalty-card" data-reveal>
+          <h3>Goaltender interference</h3>
+          <div class="penalty-side penalty-side--nhl">
+            <span class="pill pill--nhl">NHL</span>
+            <p>Play is not stopped simply because an attacker is in the crease. A goal can be disallowed afterwards, and the review is famously debated.</p>
+          </div>
+          <div class="penalty-side penalty-side--iihf">
+            <span class="pill pill--iihf">IIHF</span>
+            <p>An attacking player in the crease stops play immediately, with the face-off in the neutral zone.</p>
+          </div>
+        </article>
+
+        <article class="penalty-card" data-reveal>
+          <h3>Trapezoid rule</h3>
+          <div class="penalty-side penalty-side--nhl">
+            <span class="pill pill--nhl">NHL</span>
+            <p>The goaltender may handle the puck behind the net only inside the trapezoid. Playing it outside is a delay-of-game penalty.</p>
+          </div>
+          <div class="penalty-side penalty-side--iihf">
+            <span class="pill pill--iihf">IIHF</span>
+            <p>No trapezoid. The goaltender may play the puck anywhere behind the goal line.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="table-scroll" data-reveal>
+        <table class="data-table">
+          <caption class="sr-only">Penalty types and durations</caption>
+          <thead>
+            <tr><th scope="col">Penalty type</th><th scope="col">Duration</th><th scope="col">What happens</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Minor</th><td>2 minutes</td><td>Ends early if the power-play team scores.</td></tr>
+            <tr><th scope="row">Major</th><td>5 minutes</td><td>Runs full length even if a goal is scored, except in overtime.</td></tr>
+            <tr><th scope="row">Misconduct</th><td>10 minutes</td><td>Player leaves the ice; the team may substitute, so no manpower loss.</td></tr>
+            <tr><th scope="row">Match</th><td>Ejection + 5 minutes</td><td>For deliberate attempt to injure; the player is out of the game.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="split split--tight">
+        <article class="mini-card" data-reveal>
+          <h3>Roster size</h3>
+          <p><span class="pill pill--nhl">NHL</span> 18 skaters and 2 goaltenders — 20 dressed per game, drawn from a larger active roster.</p>
+          <p><span class="pill pill--iihf">IIHF</span> 20 skaters and 2 goaltenders — 22 dressed.</p>
+        </article>
+        <article class="mini-card" data-reveal>
+          <h3>Helmets and visors</h3>
+          <p><span class="pill pill--nhl">NHL</span> A player who loses a helmet may retrieve it and continue; visors are mandatory only for players below the experience threshold.</p>
+          <p><span class="pill pill--iihf">IIHF</span> A player who loses a helmet must leave the ice immediately; visors are mandatory for all players.</p>
+        </article>
+        <article class="mini-card" data-reveal>
+          <h3>Face-off violations</h3>
+          <p><span class="pill pill--nhl">NHL</span> The offending player is replaced from the face-off, except after an icing.</p>
+          <p><span class="pill pill--iihf">IIHF</span> From 2026-27 the offending centre is removed and replaced; the first violation after an icing is a warning instead.</p>
+        </article>
+        <article class="mini-card" data-reveal>
+          <h3>Penalty shot taker</h3>
+          <p><span class="pill pill--nhl">NHL</span> The player who was fouled takes the shot, unless injured or ejected.</p>
+          <p><span class="pill pill--iihf">IIHF</span> Any player on the team may be designated to take it.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OVERTIME ============ -->
+  <section class="section" id="overtime" aria-labelledby="otTitle">
+    <div class="wrap">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">05 — Overtime &amp; Shootout</p>
+        <h2 id="otTitle">Five minutes, ten minutes, or all night</h2>
+        <p class="section-lede">The NHL regular season runs one short overtime and then a shootout. The playoffs never shoot out. The IIHF changes the format by tournament round.</p>
+      </header>
+
+      <div class="ot-cards">
+        <article class="ot-card" data-reveal>
+          <p class="ot-when">NHL · Regular season</p>
+          <h3>5 min · 3-on-3</h3>
+          <p>Sudden-death 3-on-3. If nobody scores, a shootout follows: three shooters per team, then sudden death. A shooter cannot go again until everyone has shot.</p>
+        </article>
+        <article class="ot-card" data-reveal>
+          <p class="ot-when">NHL · Playoffs</p>
+          <h3>20 min · 5-on-5</h3>
+          <p>Sudden-death 5-on-5 periods of 20 minutes, repeated as needed. No shootouts, no ties.</p>
+        </article>
+        <article class="ot-card" data-reveal>
+          <p class="ot-when">IIHF · Preliminary round</p>
+          <h3>5 min · 3-on-3</h3>
+          <p>Same five-minute 3-on-3 as the NHL regular season, but the shootout starts with five shooters per team.</p>
+        </article>
+        <article class="ot-card" data-reveal>
+          <p class="ot-when">IIHF · Quarter-finals &amp; semi-finals</p>
+          <h3>10 min · 3-on-3</h3>
+          <p>A ten-minute 3-on-3 overtime, then a five-shooter shootout if the game is still level.</p>
+        </article>
+        <article class="ot-card" data-reveal>
+          <p class="ot-when">IIHF · Gold &amp; bronze medal games</p>
+          <h3>20 min · 3-on-3</h3>
+          <p>Twenty-minute 3-on-3 periods with an intermission between. No shootout — a champion is decided in open play.</p>
+        </article>
+        <article class="ot-card ot-card--fact" data-reveal>
+          <p class="ot-when">Both books</p>
+          <h3>Intermission clock</h3>
+          <p>NHL intermissions are 18 minutes; Olympic and IIHF intermissions are 15 minutes. Both play three 20-minute periods.</p>
+        </article>
+      </div>
+
+      <div class="table-scroll" data-reveal>
+        <table class="data-table data-table--wide">
+          <caption class="sr-only">Overtime and shootout comparison by competition</caption>
+          <thead>
+            <tr>
+              <th scope="col">Competition</th>
+              <th scope="col">Overtime</th>
+              <th scope="col">Goaltenders</th>
+              <th scope="col">Shootout</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">NHL regular season</th><td>5 minutes, sudden death</td><td>3-on-3</td><td>3 shooters, then sudden death</td></tr>
+            <tr><th scope="row">NHL playoffs</th><td>20-minute periods, unlimited</td><td>5-on-5</td><td>None</td></tr>
+            <tr><th scope="row">IIHF preliminary</th><td>5 minutes, sudden death</td><td>3-on-3</td><td>5 shooters, then sudden death</td></tr>
+            <tr><th scope="row">IIHF quarter-final / semi-final</th><td>10 minutes, sudden death</td><td>3-on-3</td><td>5 shooters, then sudden death</td></tr>
+            <tr><th scope="row">IIHF medal games</th><td>20-minute periods, unlimited</td><td>3-on-3</td><td>None</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="footnote" data-reveal>Olympic rosters are capped at 25 players for men (22 skaters, 3 goaltenders) and 23 for women. NHL teams dress 20 players for a game from a larger active roster.</p>
+    </div>
+  </section>
+
+  <!-- ============ 2026-27 CHANGES ============ -->
+  <section class="section section--alt" id="changes" aria-labelledby="chTitle">
+    <div class="wrap">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">06 — 2026-27 Changes</p>
+        <h2 id="chTitle">What is new in both rulebooks</h2>
+        <p class="section-lede">The NHL changes come from the 2026-27 rulebook and the new CBA as reported by Scouting the Refs and Bleacher Report. The IIHF changes come from the 2026-27 rulebook as summarised by the Elite League.</p>
+      </header>
+
+      <div class="change-columns">
+        <div class="change-col">
+          <header class="change-col-head">
+            <span class="pill pill--nhl">NHL</span>
+            <h3>2026-27</h3>
+          </header>
+          <article class="change-item" data-reveal>
+            <span class="change-num">01</span>
+            <div>
+              <h4>Neck protection required for new players</h4>
+              <p>Any player with zero previous NHL games — goaltenders included — must wear cut-resistant neck protection, and it applies in pregame warm-ups too. The rule is not retroactive: one NHL game before 2026-27 and the protection stays optional.</p>
+            </div>
+          </article>
+          <article class="change-item" data-reveal>
+            <span class="change-num">02</span>
+            <div>
+              <h4>Regular season grows to 84 games</h4>
+              <p>Up from 82, the first time since 1993-94. Every team plays four games against each divisional opponent, two home and two away. Preseason is capped at four games, with players holding 100+ career NHL games limited to two.</p>
+            </div>
+          </article>
+          <article class="change-item" data-reveal>
+            <span class="change-num">03</span>
+            <div>
+              <h4>Emergency backup goaltender redefined</h4>
+              <p>The on-call local EBUG is gone. Teams must designate a dedicated EBUG who travels and practises with the club: no NHL game under a Standard Player Contract, fewer than 80 professional games at any level, and no professional hockey in the previous three seasons. If activated, the EBUG signs an amateur or professional tryout and does not count against the active roster.</p>
+            </div>
+          </article>
+          <article class="change-item" data-reveal>
+            <span class="change-num">04</span>
+            <div>
+              <h4>Uniform enforcement</h4>
+              <p>Vision on equipment: helmets in warm-ups, properly worn visors and jerseys, and the jersey-tuck interpretation are all part of the season's enforcement push.</p>
+            </div>
+          </article>
+          <article class="change-item" data-reveal>
+            <span class="change-num">05</span>
+            <div>
+              <h4>Coach's challenge can remove a puck-over-glass penalty</h4>
+              <p>A challenge may now be used to take down a delay-of-game penalty for shooting the puck over the glass, but only where the puck was deflected.</p>
+            </div>
+          </article>
+          <article class="change-item" data-reveal>
+            <span class="change-num">06</span>
+            <div>
+              <h4>Playoff salary-cap compliance</h4>
+              <p>Lineups dressed in the Stanley Cup Playoffs must comply with the salary cap, closing the long-term injured reserve route to an over-the-cap playoff roster.</p>
+            </div>
+          </article>
+          <article class="change-item" data-reveal>
+            <span class="change-num">07</span>
+            <div>
+              <h4>Contract term and bonus limits</h4>
+              <p>Maximum term drops to seven years to re-sign with the current team and six years for unrestricted free agents. Signing bonuses are capped at 60% of total value, salary deferral is prohibited on new deals, and the front-loading gap between adjacent years cannot exceed 20% of first-year compensation (down from 25%).</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="change-col">
+          <header class="change-col-head">
+            <span class="pill pill--iihf">IIHF</span>
+            <h3>2026-27</h3>
+          </header>
+          <article class="change-item" data-reveal>
+            <span class="change-num">01</span>
+            <div>
+              <h4>Face-off violation: centre is replaced</h4>
+              <p>Under Rule 76, the centre of the offending team is removed from the face-off and replaced. The exception is a face-off following an icing, where the first violation draws a warning instead.</p>
+            </div>
+          </article>
+          <article class="change-item" data-reveal>
+            <span class="change-num">02</span>
+            <div>
+              <h4>Offside needs possession and control</h4>
+              <p>An attacking player who enters the attacking zone before the puck must have possession and control of the puck with the stick to stay onside.</p>
+            </div>
+          </article>
+          <article class="change-item" data-reveal>
+            <span class="change-num">03</span>
+            <div>
+              <h4>High-sticking tied to shoulder height</h4>
+              <p>Contact counts as high-sticking only where the opponent's shoulders are at waist level or higher — a clarification for players bent over when a stick rides above the shoulders.</p>
+            </div>
+          </article>
+          <article class="change-item" data-reveal>
+            <span class="change-num">04</span>
+            <div>
+              <h4>Goaltender penalties served by a skater</h4>
+              <p>When a goaltender is penalised, a skater who was on the ice at the time serves the penalty.</p>
+            </div>
+          </article>
+          <article class="change-item" data-reveal>
+            <span class="change-num">05</span>
+            <div>
+              <h4>Coach's challenge in every game</h4>
+              <p>All Rule 38.2 situations become available in every regular-season game: goaltender interference, an offside leading to a goal, and a missed stoppage such as a hand pass, a high stick or the puck leaving the playing surface. An unsuccessful challenge costs two minutes for delaying the game, rising to four on the next miss.</p>
+            </div>
+          </article>
+          <article class="change-item" data-reveal>
+            <span class="change-num">06</span>
+            <div>
+              <h4>Puck-over-glass challenge is one-way</h4>
+              <p>A delay-of-game call for shooting the puck directly out of play can only be challenged once the penalty has been called on the ice. The opposing coach cannot challenge in order to have a penalty assessed.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <p class="footnote" data-reveal>Rulebook PDFs for both 2026-27 books could not be retrieved in full during research, so these changes are reported from the secondary sources listed under Sources. Check the official books before quoting them as law.</p>
+    </div>
+  </section>
+
+  <!-- ============ REFEREE SIGNALS ============ -->
+  <section class="section" id="signals" aria-labelledby="sigTitle">
+    <div class="wrap">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">07 — Referee Signals</p>
+        <h2 id="sigTitle">Read the hands, not the whistle</h2>
+        <p class="section-lede">Twenty-three calls, each drawn as an illustrated diagram so the hand position does the explaining. The wording under each card is the official signal description. Search by name in English or Korean.</p>
+      </header>
+
+      <div class="signal-toolbar" data-reveal>
+        <label class="search-field" for="signalSearch">
+          <span class="search-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img" aria-label=""><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5 L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+          <input id="signalSearch" type="search" placeholder="Search signals — e.g. hooking, 아이싱, tripping" autocomplete="off" aria-describedby="signalCount">
+        </label>
+        <p class="signal-count" id="signalCount" role="status" aria-live="polite">23 signals</p>
+      </div>
+
+      <div class="signal-grid" id="signalGrid">
+        <!-- cards injected by js/signals.js -->
+      </div>
+      <p class="empty-state" id="signalEmpty" hidden>No signal matches that search. Try “icing”, “elbow”, or “penalty shot”.</p>
+
+      <p class="footnote">Signal descriptions follow the published ice hockey officials' signals charts. A few motions differ slightly between governing bodies; the diagrams show the standard North American signalling form.</p>
+    </div>
+  </section>
+
+  <!-- ============ VIDEOS ============ -->
+  <section class="section section--alt" id="videos" aria-labelledby="vidTitle">
+    <div class="wrap">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">08 — Videos</p>
+        <h2 id="vidTitle">Watch the rule instead of reading it</h2>
+        <p class="section-lede">Official NHL Video Rulebook pages plus English-language explainers from outside Korea and Asia. Videos load only when you press play.</p>
+      </header>
+
+      <div class="video-feature" data-reveal>
+        <div class="video-frame" data-video="O2SuRlBy4Kk" data-title="NHL vs Olympic Hockey Explained &amp; Key Differences You Must Know">
+          <img class="video-thumb" src="https://i.ytimg.com/vi/O2SuRlBy4Kk/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+          <button class="video-play" type="button" aria-label="Play: NHL vs Olympic Hockey Explained">
+            <span aria-hidden="true"></span>
+          </button>
+          <span class="video-badge">Featured explainer</span>
+        </div>
+        <div class="video-feature-copy">
+          <p class="eyebrow">Start here</p>
+          <h3>NHL vs Olympic hockey explained</h3>
+          <p>Reporters walk through the rule differences a first-time Olympic viewer notices: rink size, fighting, officiating standards and overtime. Good orientation before the detail sections above.</p>
+          <ul class="video-points">
+            <li>Why the international sheet plays differently</li>
+            <li>What changes when NHL players go to the Games</li>
+            <li>How overtime is settled in each format</li>
+          </ul>
+          <a class="btn btn--ghost btn--sm" href="https://www.youtube.com/watch?v=O2SuRlBy4Kk" target="_blank" rel="noopener noreferrer">Open on YouTube <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <h3 class="sub-head" data-reveal>NHL Video Rulebook</h3>
+      <div class="link-cards">
+        <a class="link-card" href="https://www.nhl.com/info/video-rulebook" target="_blank" rel="noopener noreferrer" data-reveal>
+          <span class="link-tag">Official library</span>
+          <h4>NHL Video Rulebook</h4>
+          <p>Restraining fouls, stick fouls, physical fouls, other fouls, game flow and video review, each with league-supplied clips.</p>
+          <span class="link-go" aria-hidden="true">↗</span>
+        </a>
+        <a class="link-card" href="https://www.nhl.com/video/video-rulebook-uniform-guidelines-6405746550112" target="_blank" rel="noopener noreferrer" data-reveal>
+          <span class="link-tag">2026-27</span>
+          <h4>Rule Changes &amp; Enforcement</h4>
+          <p>Neck protection, helmets in warm-ups, and properly worn visors and jerseys.</p>
+          <span class="link-go" aria-hidden="true">↗</span>
+        </a>
+        <a class="link-card" href="https://www.nhl.com/video/video-rulebook-icing-6362363082112" target="_blank" rel="noopener noreferrer" data-reveal>
+          <span class="link-tag">Game flow</span>
+          <h4>Video Rulebook: Icing</h4>
+          <p>The league's own walkthrough of the icing rule and its hybrid application.</p>
+          <span class="link-go" aria-hidden="true">↗</span>
+        </a>
+        <a class="link-card" href="https://www.nhl.com/video/video-rulebook-high-sticking-the-puck-6362363873112" target="_blank" rel="noopener noreferrer" data-reveal>
+          <span class="link-tag">Game flow</span>
+          <h4>High-Sticking the Puck</h4>
+          <p>Playing the puck above the shoulder — what is allowed and when play stops.</p>
+          <span class="link-go" aria-hidden="true">↗</span>
+        </a>
+        <a class="link-card" href="https://www.nhl.com/video/video-rulebook-delaying-the-game-6362363145112" target="_blank" rel="noopener noreferrer" data-reveal>
+          <span class="link-tag">Penalties</span>
+          <h4>Delaying the Game</h4>
+          <p>Rule 63 examined, including the puck-over-glass call now open to challenge.</p>
+          <span class="link-go" aria-hidden="true">↗</span>
+        </a>
+        <a class="link-card" href="https://www.nhl.com/video/nhl-tonight-rules-changes-for-the-2026-27-season-6404456665112" target="_blank" rel="noopener noreferrer" data-reveal>
+          <span class="link-tag">2026-27</span>
+          <h4>Rules Changes for 2026-27</h4>
+          <p>Studio reaction to two extra regular-season games and a shorter preseason for veterans.</p>
+          <span class="link-go" aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <h3 class="sub-head" data-reveal>Explainer videos</h3>
+      <div class="video-grid" id="videoGrid">
+        <article class="video-card" data-video="nv2FUnHceqU" data-reveal>
+          <div class="video-frame">
+            <img class="video-thumb" src="https://i.ytimg.com/vi/nv2FUnHceqU/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <button class="video-play" type="button" aria-label="Play: The Rules of Ice Hockey Explained"><span aria-hidden="true"></span></button>
+          </div>
+          <h4>The Rules of Ice Hockey — Explained</h4>
+          <p>Beginner-level pass over icing, offside, power plays, penalty shots and overtime.</p>
+          <a class="video-link" href="https://www.youtube.com/watch?v=nv2FUnHceqU" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="video-card" data-video="0t5Ji_jHBcU" data-reveal>
+          <div class="video-frame">
+            <img class="video-thumb" src="https://i.ytimg.com/vi/0t5Ji_jHBcU/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <button class="video-play" type="button" aria-label="Play: Icing and Offside Finally Make Sense"><span aria-hidden="true"></span></button>
+          </div>
+          <h4>Icing &amp; Offside Finally Make Sense</h4>
+          <p>Hybrid icing, delayed offside, the trapezoid and goaltender interference in depth.</p>
+          <a class="video-link" href="https://www.youtube.com/watch?v=0t5Ji_jHBcU" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="video-card" data-video="xK4DueVEbtE" data-reveal>
+          <div class="video-frame">
+            <img class="video-thumb" src="https://i.ytimg.com/vi/xK4DueVEbtE/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <button class="video-play" type="button" aria-label="Play: NHL vs 2026 Olympic rules"><span aria-hidden="true"></span></button>
+          </div>
+          <h4>NHL vs the 2026 Olympic Tournament</h4>
+          <p>A channel-by-channel breakdown of where the 2026 Olympic rulebook parts ways with the NHL.</p>
+          <a class="video-link" href="https://www.youtube.com/watch?v=xK4DueVEbtE" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="video-card" data-video="NFShiSHyvZ8" data-reveal>
+          <div class="video-frame">
+            <img class="video-thumb" src="https://i.ytimg.com/vi/NFShiSHyvZ8/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <button class="video-play" type="button" aria-label="Play: 2026 Rules Update"><span aria-hidden="true"></span></button>
+          </div>
+          <h4>Announcing the Game — 2026 Rules Update</h4>
+          <p>Trapezoid and other 2026 rule updates walked through for officials and announcers.</p>
+          <a class="video-link" href="https://www.youtube.com/watch?v=NFShiSHyvZ8" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="video-card" data-video="qM5wHNTBZic" data-reveal>
+          <div class="video-frame">
+            <img class="video-thumb" src="https://i.ytimg.com/vi/qM5wHNTBZic/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <button class="video-play" type="button" aria-label="Play: How Brodeur created the trapezoid"><span aria-hidden="true"></span></button>
+          </div>
+          <h4>How Brodeur Created the Trapezoid</h4>
+          <p>The history behind the one rule that has no IIHF equivalent.</p>
+          <a class="video-link" href="https://www.youtube.com/watch?v=qM5wHNTBZic" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">↗</span></a>
+        </article>
+
+        <article class="video-card" data-video="G7yoL1U2t7g" data-reveal>
+          <div class="video-frame">
+            <img class="video-thumb" src="https://i.ytimg.com/vi/G7yoL1U2t7g/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <button class="video-play" type="button" aria-label="Play: IIHF game officials webinar"><span aria-hidden="true"></span></button>
+          </div>
+          <h4>Game Officials — IIHF Webinar</h4>
+          <p>IIHF officiating education: positioning, procedure and signal discipline.</p>
+          <a class="video-link" href="https://www.youtube.com/watch?v=G7yoL1U2t7g" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+
+      <p class="footnote" data-reveal>Embeds require a network connection; opening this page from a local file may block YouTube playback. Use a local server or the published site. NHL video pages are linked rather than embedded because the clips are NHL property.</p>
+    </div>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="sources" aria-labelledby="srcTitle">
+    <div class="wrap">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">09 — Sources</p>
+        <h2 id="srcTitle">Where every figure comes from</h2>
+        <p class="section-lede">Primary rulebooks first, then the reporting used where a rulebook could not be read in full. Limitations are stated plainly rather than smoothed over.</p>
+      </header>
+
+      <div class="source-groups">
+        <section class="source-group" data-reveal>
+          <h3>Official rule documents</h3>
+          <ul>
+            <li><a href="https://media.nhl.com/site/asset/public/ext/2026-27/2026-27Rules.pdf" target="_blank" rel="noopener noreferrer">NHL Official Rules 2026-2027 (PDF)</a></li>
+            <li><a href="https://www.iihf.com/en/statichub/4719/rules-and-regulations" target="_blank" rel="noopener noreferrer">IIHF Rules &amp; Regulations hub</a></li>
+            <li><a href="https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/rule%20book/2026-27_iihf_rule_book.pdf" target="_blank" rel="noopener noreferrer">IIHF Official Rulebook 2026/27 (PDF)</a></li>
+            <li><a href="https://blob.iihf.com/iihf-media/iihfmvc/media/contentimages/4_sport/officiating/rule_book/25_26/2025-26_iihf_rulebook_19052025-v1.pdf" target="_blank" rel="noopener noreferrer">IIHF Official Rulebook 2025/26 (PDF)</a></li>
+            <li><a href="https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/officiating%20files/situation%20handbook/2026-27_iihf_situation_handbook.pdf" target="_blank" rel="noopener noreferrer">IIHF Situation Handbook 2026/27 (PDF)</a></li>
+            <li><a href="https://www.usahockeyrulebook.com/" target="_blank" rel="noopener noreferrer">USA Hockey Rulebook</a></li>
+            <li><a href="https://www.ncaa.org/championships/playing-rules/ice-hockey-playing-rules/" target="_blank" rel="noopener noreferrer">NCAA Ice Hockey Playing Rules</a></li>
+          </ul>
+        </section>
+
+        <section class="source-group" data-reveal>
+          <h3>Comparison reporting and news</h3>
+          <ul>
+            <li><a href="https://www.sportingnews.com/us/nhl/news/nhl-iihf-rules-differences/m24p0qczcnyospjhozkv6zth" target="_blank" rel="noopener noreferrer">NHL vs IIHF rules, explained — Sporting News</a></li>
+            <li><a href="https://www.nbcolympics.com/news/what-nhl-rules-are-different-olympics" target="_blank" rel="noopener noreferrer">What NHL rules are different in the Olympics — NBC Olympics</a></li>
+            <li><a href="https://www.nbclosangeles.com/olympics/2026-milan-cortina/olympic-hockey-nhl-rules-comparison-rink-size-fighting-overtime-shootouts/3788683/" target="_blank" rel="noopener noreferrer">Olympic vs NHL rules: rink, fighting, overtime, shootouts — NBC Los Angeles</a></li>
+            <li><a href="https://scoutingtherefs.com/2025/09/49364/nhl-rule-book-updates-for-2025-26/" target="_blank" rel="noopener noreferrer">NHL Rule Book Updates for 2025-26 — Scouting the Refs</a></li>
+            <li><a href="https://scoutingtherefs.com/2026/09/52608/nhl-rule-changes-2026-27/" target="_blank" rel="noopener noreferrer">NHL Rule Changes for 2026-27 — Scouting the Refs</a></li>
+            <li><a href="https://scoutingtherefs.com/nhl-coachs-challenge-tracker/" target="_blank" rel="noopener noreferrer">NHL Coach's Challenge Tracker — Scouting the Refs</a></li>
+            <li><a href="https://bleacherreport.com/articles/25503243-explaining-new-nhl-rule-changes-2026-27-season-and-details-stanley-cup-bracket" target="_blank" rel="noopener noreferrer">Explaining new NHL rule changes for 2026-27 — Bleacher Report</a></li>
+            <li><a href="https://www.eliteleague.co.uk/article/5497-changes-to-iihf-rulebook-for-2026-27" target="_blank" rel="noopener noreferrer">Changes to the IIHF Rulebook for 2026-27 — Elite League</a></li>
+            <li><a href="https://www.eliteleague.co.uk/article/5449-coach-s-challenges-expanded-for-2026-27-season" target="_blank" rel="noopener noreferrer">Coach's Challenges expanded for 2026/27 — Elite League</a></li>
+            <li><a href="https://www.nytimes.com/athletic/6873802/2025/12/08/iihf-olympic-hockey-rink-size/" target="_blank" rel="noopener noreferrer">IIHF confirms shorter Olympic rinks — The Athletic</a></li>
+          </ul>
+        </section>
+
+        <section class="source-group" data-reveal>
+          <h3>Reference</h3>
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Ice_hockey_rules" target="_blank" rel="noopener noreferrer">Ice hockey rules — Wikipedia</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/National_Hockey_League_rules" target="_blank" rel="noopener noreferrer">National Hockey League rules — Wikipedia</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Ice_hockey_rink" target="_blank" rel="noopener noreferrer">Ice hockey rink — Wikipedia</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Icing_(ice_hockey)" target="_blank" rel="noopener noreferrer">Icing — Wikipedia</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Offside_(ice_hockey)" target="_blank" rel="noopener noreferrer">Offside — Wikipedia</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Overtime_(ice_hockey)" target="_blank" rel="noopener noreferrer">Overtime — Wikipedia</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Penalty_(ice_hockey)" target="_blank" rel="noopener noreferrer">Penalty — Wikipedia</a></li>
+          </ul>
+        </section>
+
+        <section class="source-group" data-reveal>
+          <h3>Signals and officiating</h3>
+          <ul>
+            <li><a href="https://cdn4.sportngin.com/attachments/document/0148/0543/hockey_referee_signals.pdf" target="_blank" rel="noopener noreferrer">Ice Hockey Referee Signals (PDF)</a></li>
+            <li><a href="http://fs.ncaa.org/Docs/stats/m_icehockey_rb/IcehockeySignals.pdf" target="_blank" rel="noopener noreferrer">Ice Hockey Officials' Signals — NCAA (PDF)</a></li>
+            <li><a href="https://www.chicagowolves.com/gameday/hockey-101/penalties-and-signals/" target="_blank" rel="noopener noreferrer">Ice Hockey 101: Penalties &amp; Signals — Chicago Wolves</a></li>
+            <li><a href="https://blob.iihf.com/iihf-media/iihfmvc/media/downloads/officiating%20files/officiating-procedure-manual/230509_iihf_opm_4_officials_systems_v4_0.pdf" target="_blank" rel="noopener noreferrer">IIHF Officiating Procedure Manual, four-official system (PDF)</a></li>
+            <li><a href="https://www.nhl.com/info/video-rulebook" target="_blank" rel="noopener noreferrer">NHL Video Rulebook</a></li>
+            <li><a href="https://www.nhl.com/fans/hockey-101" target="_blank" rel="noopener noreferrer">NHL Hockey 101</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="limits" data-reveal>
+        <h3>Stated limitations</h3>
+        <ul>
+          <li>The NHL 2026-27 rulebook PDF could not be fully retrieved during research (network error), so the NHL rule-change entries rely on Scouting the Refs and Bleacher Report.</li>
+          <li>The IIHF 2026-27 rulebook PDF likewise failed a full crawl; the changes were confirmed through the 2025-26 book and the Elite League summary of the 2026-27 book.</li>
+          <li>Reporting on the Milan Cortina sheet width differs between outlets (26 m and 30 m). The IIHF permits 26–30 m, so venue-level figures can differ from the general rule.</li>
+          <li>Rulebooks are revised each season. Re-check the official documents before relying on any figure for officiating or competition decisions.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <strong>HOCKEY<span>RULES</span></strong>
+      <p>NHL vs IIHF rule comparison. Built as a static reference site.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#rink">Rink</a>
+      <a href="#icing">Icing</a>
+      <a href="#offside">Offside</a>
+      <a href="#penalties">Penalties</a>
+      <a href="#overtime">Overtime</a>
+      <a href="#changes">2026-27</a>
+      <a href="#signals">Signals</a>
+      <a href="#sources">Sources</a>
+    </nav>
+    <p class="footer-credit">Produced by <b>STRYDE</b> · Not affiliated with the NHL or the IIHF.</p>
+  </div>
+</footer>
+
+<script src="js/signals.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
